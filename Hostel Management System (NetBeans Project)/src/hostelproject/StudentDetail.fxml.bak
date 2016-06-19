@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="678.0" prefWidth="1045.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.StudentDetailController">
+  <children>
+    <ImageView fitHeight="678.0" fitWidth="1309.0098681760285" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/rest.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Text layoutX="375.0" layoutY="50.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Details of Student">
+      <font>
+        <Font name="Segoe UI Light" size="40.0" />
+      </font>
+    </Text>
+    <Text fill="GREY" layoutX="264.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+      <font>
+        <Font name="Segoe UI Semilight" size="20.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Father's Name:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mother's Name:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll Number:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permanent Address:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State:" />
+    <TextField id="NameTextFeild" fx:id="feenoTextFeild" layoutX="464.0" layoutY="194.0" prefWidth="376.0" promptText="Enter Fee Receipt Number" visible="false" />
+    <TextField id="NameTextFeild" fx:id="nameTextFeild" layoutX="464.0" layoutY="231.0" prefWidth="376.0" promptText="Enter Name of Student" visible="false" />
+    <TextField id="FatherNameTextFeild" fx:id="fatherTextFeild" layoutX="464.0" layoutY="268.0" prefWidth="376.0" promptText="Enter Father's Name" visible="false" />
+    <TextField id="MotherNameTextFeild" fx:id="motherTextFeild" layoutX="464.0" layoutY="305.0" prefWidth="376.0" promptText="Enter Mother's Name" visible="false" />
+    <TextField id="RollNumberTextFeild" fx:id="rollnoTextFeild" layoutX="464.0" layoutY="342.0" prefWidth="376.0" promptText="Enter Roll Number" visible="false" />
+    <HBox id="HBox" fx:id="dobHBox" alignment="CENTER" layoutX="464.0" layoutY="376.0" minWidth="376.0" prefWidth="376.0" spacing="30.0" visible="false">
+      <children>
+        <ComboBox id="DateComboBox" fx:id="dateComboBox" minWidth="100.0" promptText="Date">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ComboBox id="MonthCombobox" fx:id="monthCombox" minWidth="100.0" promptText="Month">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ComboBox id="YearCombobox" fx:id="yearComboBox" minWidth="100.0" promptText="Year">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </HBox>
+    <TextField id="MotherNameTextFeild" fx:id="mobileTextFeild" layoutX="464.0" layoutY="416.0" prefWidth="376.0" promptText="Enter 10 Digit Mobile Number" visible="false" />
+    <TextField fx:id="addressTextFeild" layoutX="464.0" layoutY="453.0" prefWidth="376.0" promptText="Enter Perament Address" visible="false" />
+    <TextField id="CityTextFeild" fx:id="cityTextFeild" layoutX="464.0" layoutY="490.0" prefWidth="376.0" promptText="Enter City of Residence" visible="false" />
+    <ComboBox id="StateComboBox" fx:id="stateCombobox" layoutX="464.0" layoutY="527.0" prefHeight="21.0" prefWidth="271.0" promptText="Select State of Residence" visible="false">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <CheckBox fx:id="VehicleCheckBox" layoutX="264.0" layoutY="561.0" mnemonicParsing="false" mouseTransparent="true" onAction="#VehicleCheckBoxAction" text="Vehicle" textFill="GREY">
+      <font>
+        <Font name="Segoe UI" size="20.0" fx:id="x2" />
+      </font>
+    </CheckBox>
+    <TextField id="VehicleNumberTextFeild" fx:id="vehiclenoTextFeild" editable="false" layoutX="464.0" layoutY="564.0" prefWidth="376.0" promptText="No Vehicle Owned" visible="false" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee Receipt Number:" />
+    <Text fx:id="roomnoLabel" font="$x1" layoutX="464.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number:" />
+    <Text fill="GREY" font="$x1" layoutX="264.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Registered:" />
+    <Text id="accommodationLable" fx:id="DateLabel" font="$x1" layoutX="464.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text fx:id="blockLabel" font="$x1" layoutX="464.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text fx:id="StateLabel" font="$x1" layoutX="464.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text fx:id="dobLabel" font="$x1" layoutX="464.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="feenoLabel" font="$x1" layoutX="464.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="nameLabel" font="$x1" layoutX="464.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="fatherLabel" font="$x1" layoutX="464.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="motherLabel" font="$x1" layoutX="464.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="rollnoLabel" font="$x1" layoutX="464.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="mobileLabel" font="$x1" layoutX="464.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="addressLabel" font="$x1" layoutX="464.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="CityLabel" font="$x1" layoutX="464.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Text id="StateLabel" fx:id="vehicleNoLabel" font="$x1" layoutX="464.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <HBox id="HBox" alignment="CENTER" layoutX="270.0" layoutY="630.0" spacing="30.0">
+      <children>
+        <Button id="cancelButton" fx:id="editCancelButton" font="$x1" minHeight="38.0" mnemonicParsing="false" onAction="#editCancelButtonAction" prefHeight="38.0" prefWidth="178.0" text="Edit">
+          <effect>
+            <ColorAdjust hue="0.10687022900763354" saturation="0.2748091603053435" />
+          </effect>
+        </Button>
+        <Button id="submitbutton" fx:id="updateButton" defaultButton="true" disable="true" font="$x1" minHeight="38.0" mnemonicParsing="false" onAction="#updateButtonAction" prefHeight="38.0" prefWidth="178.0" text="Update" />
+        <Button id="cancelButton" font="$x1" minHeight="38.0" mnemonicParsing="false" onAction="#viewPayBillAction" prefHeight="38.0" prefWidth="178.0" text="View &amp; Pay Bill">
+          <effect>
+            <ColorAdjust brightness="-0.10687022900763354" contrast="0.13740458015267176" hue="0.6412213740458015" saturation="0.2442748091603053" />
+          </effect>
+        </Button>
+      </children>
+    </HBox>
+    <Text fx:id="ErrorLabel" fill="RED" font="$x2" layoutX="495.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" />
+  </children>
+</AnchorPane>

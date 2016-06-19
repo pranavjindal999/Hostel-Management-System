@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1045.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.shiftToEmptyRoomController">
+  <children>
+    <ImageView fitHeight="753.0" fitWidth="1085.174453769123" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/rest%20non%20wide%20-%20Copy.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Text layoutX="350.0" layoutY="70.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift to Empty Room">
+      <font>
+        <Font name="Segoe UI Light" size="45.0" />
+      </font>
+    </Text>
+    <AnchorPane id="AnchorPane" layoutX="116.0" layoutY="193.0">
+      <children>
+        <ComboBox id="blockComboBox" fx:id="firstblock" layoutX="190.0" layoutY="79.0" prefHeight="21.0" prefWidth="119.0" promptText="Select Block">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <RadioButton id="SingleRadioButton" fx:id="firstSingleRadio" layoutX="190.0" layoutY="119.0" mnemonicParsing="false" text="Single Room" />
+        <RadioButton id="DoubleRadioButton" fx:id="firstDoubleRadio" layoutX="295.0" layoutY="119.0" mnemonicParsing="false" prefWidth="96.0" text="Double Room" />
+        <ComboBox id="AvailableRooms" fx:id="firstfilledCombo" layoutX="190.0" layoutY="153.0" prefHeight="21.0" prefWidth="201.0" promptText="Select From Filled Rooms">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Text layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number:">
+          <font>
+            <Font name="Segoe UI Semilight" size="20.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text font="$x1" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accommodation:" />
+        <Text font="$x1" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block:" />
+        <Text layoutX="112.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Student">
+          <font>
+            <Font name="Segoe UI Semilight" size="25.0" fx:id="x2" />
+          </font>
+        </Text>
+      </children>
+    </AnchorPane>
+    <AnchorPane id="AnchorPane" layoutX="572.0" layoutY="188.0">
+      <children>
+        <Text font="$x2" layoutX="84.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Room to Shift to" />
+        <ComboBox id="blockComboBox" fx:id="secondBlock" layoutX="190.0" layoutY="83.0" prefHeight="21.0" prefWidth="119.0" promptText="Select Block">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <RadioButton id="SingleRadioButton" fx:id="secondSingleRadio" layoutX="190.0" layoutY="123.0" mnemonicParsing="false" text="Single Room" />
+        <ComboBox id="AvailableRooms" fx:id="secondfilledCombo" layoutX="190.0" layoutY="157.0" prefHeight="21.0" prefWidth="201.0" promptText="Select From Empty Rooms">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Text font="$x1" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number:" />
+        <Text font="$x1" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accommodation:" />
+        <Text font="$x1" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block:" />
+        <RadioButton id="DoubleRadioButton" fx:id="secondDoubleRadio" layoutX="296.0" layoutY="122.0" mnemonicParsing="false" prefWidth="96.0" text="Double Room" />
+      </children>
+    </AnchorPane>
+    <AnchorPane id="AnchorPane" fx:id="firstdetails" layoutX="205.0" layoutY="393.0" visible="false">
+      <children>
+        <Text fill="GREY" font="$x1" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+        <Text fill="GREY" font="$x1" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll Number:" />
+        <Text fx:id="firstnameLabel" font="$x1" layoutX="133.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block:" />
+        <Text fx:id="firstrollnoLabel" font="$x1" layoutX="133.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block:" />
+      </children>
+    </AnchorPane>
+    <Button fx:id="swapButton" defaultButton="true" layoutX="544.0" layoutY="597.0" mnemonicParsing="false" onAction="#swapButtonAction" prefHeight="63.0" prefWidth="189.0" text="Shift" textAlignment="CENTER">
+      <font>
+        <Font name="Segoe UI Light" size="30.0" />
+      </font>
+    </Button>
+    <Button fx:id="cancelButton" cancelButton="true" layoutX="313.0" layoutY="597.0" minHeight="38.0" mnemonicParsing="false" onAction="#CancelButtonAction" prefHeight="62.999900000002526" prefWidth="189.0" text="Cancel">
+      <effect>
+        <ColorAdjust brightness="-0.07633587786259544" contrast="0.15267175572519087" hue="0.13740458015267176" saturation="0.22900763358778642" />
+      </effect>
+      <font>
+        <Font name="Segoe UI Light" size="25.0" />
+      </font>
+    </Button>
+    <Text fx:id="ErrorLabel" fill="RED" font="$x1" layoutX="508.0" layoutY="581.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+  </children>
+</AnchorPane>

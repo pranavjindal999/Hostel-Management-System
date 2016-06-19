@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="414.5856628417969" minWidth="574.0" prefHeight="414.5856628417969" prefWidth="574.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.ViewPayBillController">
+  <children>
+    <ImageView fitHeight="381.58567245483397" fitWidth="574.0" layoutX="1.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/grey.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="92.0" opacity="0.5" stroke="DODGERBLUE" strokeType="INSIDE" width="574.0" />
+    <Text layoutX="129.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View &amp; Pay Due Bills">
+      <font>
+        <Font name="Segoe UI Semilight" size="40.0" />
+      </font>
+    </Text>
+    <Text layoutX="129.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block:">
+      <fill>
+        <Color blue="0.500" green="0.500" red="0.500" fx:id="x2" />
+      </fill>
+      <font>
+        <Font name="Segoe UI Semilight" size="20.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text fill="#606060" font="$x1" layoutX="129.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number:" />
+    <Text fill="$x2" font="$x1" layoutX="129.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Due:" />
+    <Text id="roomnoLabel" fx:id="blockLabel" font="$x1" layoutX="336.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block" />
+    <Text fx:id="roomnoLabel" font="$x1" layoutX="336.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="233" />
+    <Text id="dueLabel" fx:id="nameLabel" font="$x1" layoutX="336.0" layoutY="205.0" scaleY="0.9999962408224151" strokeType="OUTSIDE" strokeWidth="0.0" text="XYZ ABC" />
+    <Text fill="GREY" font="$x1" layoutX="129.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+    <Text fx:id="dueLabel" font="$x1" layoutX="336.0" layoutY="240.0" scaleY="0.9999962408224151" strokeType="OUTSIDE" strokeWidth="0.0" text="2500" />
+    <Text fill="GREY" font="$x1" layoutX="129.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Paid:" />
+    <TextField fx:id="amountpaidTextFeild" layoutX="336.0" layoutY="256.0" prefWidth="57.0" />
+    <Text layoutX="318.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="`">
+      <font>
+        <Font name="Rupee Foradian" size="20.0" fx:id="x3" />
+      </font>
+    </Text>
+    <Button fx:id="payButton" defaultButton="true" layoutX="205.0" layoutY="324.0" mnemonicParsing="false" onAction="#PayButtonAction" prefHeight="53.0" prefWidth="178.0" text="Pay Amount">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Button>
+    <Text font="$x3" layoutX="318.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="`" />
+    <Text fx:id="errorLabel" fill="RED" layoutX="298.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Text>
+  </children>
+</AnchorPane>

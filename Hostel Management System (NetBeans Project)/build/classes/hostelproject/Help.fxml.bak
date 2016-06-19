@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="961.0" prefHeight="678.0" prefWidth="1022.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.HelpController">
+  <children>
+    <ImageView fitHeight="677.0" fitWidth="1009.1897583007812" layoutX="1.0" layoutY="1.0" pickOnBounds="true">
+      <image>
+        <Image url="@media/grey.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ScrollPane blendMode="MULTIPLY" hbarPolicy="NEVER" layoutY="90.0" prefHeight="588.0" prefWidth="1022.0">
+      <content>
+        <AnchorPane id="AnchorPane">
+          <children>
+            <AnchorPane id="AnchorPane">
+              <children>
+                <Text id="headerLabel" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="The Search Box">
+                  <font>
+                    <Font name="Segoe UI Light" size="45.0" fx:id="x2" />
+                  </font>
+                </Text>
+                <Text layoutX="3.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is an all in one Search Engine for the complete database of hostel in which the results are searched out as you type, no matter what you type.">
+                  <font>
+                    <Font size="14.0" fx:id="x1" />
+                  </font>
+                </Text>
+                <Text font="$x1" layoutX="3.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As Soon as you Login, it shows you all the filled seats and the number of Results are shown besides the box." />
+                <Text font="$x1" layoutX="3.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can easily search any Room No., Name, Roll No., Vehicle No., City or State." />
+                <Text font="$x1" layoutX="3.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Say, If you type in &quot;233&quot;, it will show all the rooms that are 233. So the results would be- 233A and 233B." />
+                <Text font="$x1" layoutX="3.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you type in &quot;Mohali&quot;, it will show all the students who are from &quot;Mohali&quot; city." />
+                <Text font="$x1" layoutX="3.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special Keyword- &quot;Pending&quot; shows the list of all with pending dues. &quot;Adjust&quot; shows the adjusted students." />
+              </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" layoutY="181.0">
+              <children>
+                <Text id="headerLabel" font="$x2" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="The Search Table" />
+                <Text font="$x1" layoutX="3.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Search Table is where the results for your search appear." />
+                <Text font="$x1" layoutX="3.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The table contains only the important columns that are enough to uniquely identify a person." />
+                <Text font="$x1" layoutX="3.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can click on any result to get extended details about the person, to edit the editable details, or to pay mess bill." />
+                <Text font="$x1" layoutX="3.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To restore the left side that goes away as you click for details, you got a Shrink button which will take you where ever you were and doing whatever." />
+              </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" layoutY="340.0">
+              <children>
+                <Text id="headerLabel" font="$x2" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Paying Mess Bill" />
+                <Text font="$x1" layoutX="3.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paying mess bill is as easy as one would expect it to be." />
+                <Text font="$x1" layoutX="3.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Just search for the room you want to clear the pending bill of and go for it's details to click the View &amp; Pay Bill Button." />
+                <Text font="$x1" layoutX="3.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clicking the button opens up a dailog to enter the amount being paid and pressing the pay button simply deducts the amount paid." />
+                <Text font="$x1" layoutX="3.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The change will be adjusted in the next payment." />
+              </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" layoutY="511.0">
+              <children>
+                <Text id="headerLabel" font="$x2" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Alloting New Seat" />
+                <Text font="$x1" layoutX="3.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding New Room is simple, just select the block, accommodation, and the room number from available rooms list, fill up the form and Allot!" />
+                <Text font="$x1" layoutX="3.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Few Rules must comply- The Fee Receipt number, Roll Number, and the vehicle number can not same for two students." />
+              </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" layoutY="632.0">
+              <children>
+                <Text id="headerLabel" font="$x2" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Making New Adjustment" />
+                <Text font="$x1" layoutX="3.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students can be adjusted in rooms as per hostel adjustment rules." />
+                <Text font="$x1" layoutX="3.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There can only be one adjustment in any room and the student ID for room will be suffixed with letter E." />
+                <Text font="$x1" layoutX="3.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The rest of the process is same as allotement." />
+              </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" layoutY="772.0">
+              <children>
+                <Text id="headerLabel" font="$x2" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Emptying Seats" />
+                <Text font="$x1" layoutX="3.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can empty any particular seat, or an entire block or the entire hostel." />
+                <Text font="$x1" layoutX="3.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The only condition for emptying is that there should be no dues of mess bill." />
+              </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" layoutY="902.0">
+              <children>
+                <Text id="headerLabel" font="$x2" layoutY="47.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Swaping or Shifting" />
+                <Text font="$x1" layoutX="3.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swaping and shifting students from room to room was never so easy." />
+                <Text font="$x1" layoutX="3.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can easily swap students, there pending mess bills will also be swapped" />
+                <Text font="$x1" layoutX="3.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Similarly moving student to empty room is peice of cake, the pending bill goes along." />
+              </children>
+            </AnchorPane>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <Text id="headerLabel" font="$x2" layoutX="442.0" layoutY="57.0" scaleY="0.9405304985774596" strokeType="OUTSIDE" strokeWidth="0.0" text="Help" />
+    <Button cancelButton="true" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#closeHelpAction" prefHeight="42.51422119140625" prefWidth="152.0" text="Close">
+      <font>
+        <Font name="Segoe UI Semilight" size="20.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

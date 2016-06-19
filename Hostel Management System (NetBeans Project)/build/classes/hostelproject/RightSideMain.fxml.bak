@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="677.9998779296875" prefWidth="1044.9998779296875" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.RightSideMainController">
+  <children>
+    <ImageView fitHeight="686.4237060546875" fitWidth="1045.0" pickOnBounds="true">
+      <image>
+        <Image url="@media/grey.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="221.11194039141807" fitWidth="786.17578125" layoutX="107.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/table.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Text id="ADouble" fx:id="AEmptyDouble" layoutX="331.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="280">
+      <fill>
+        <Color blue="0.800" green="0.512" red="0.000" fx:id="x3" />
+      </fill>
+      <font>
+        <Font size="20.0" fx:id="x2" />
+      </font>
+    </Text>
+    <Text id="ASingle" fx:id="AEmptySingle" fill="$x3" font="$x2" layoutX="331.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="280" />
+    <Text id="Bdouble" fx:id="BEmptydouble" fill="$x3" font="$x2" layoutX="488.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120" />
+    <Text id="Cdouble" fx:id="CEmptydouble" fill="$x3" font="$x2" layoutX="641.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120" />
+    <Text id="Cdouble" fx:id="totalEmptyDouble" fill="$x3" font="$x2" layoutX="781.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="520" />
+    <Text id="totalSingle" fx:id="totalEmptySingle" fill="$x3" font="$x2" layoutX="781.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="280" />
+    <Text layoutX="170.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banda Singh Bahadur Boys Hostel">
+      <font>
+        <Font name="Segoe UI Semilight" size="50.0" />
+      </font>
+    </Text>
+    <Button layoutX="107.0" layoutY="458.0" mnemonicParsing="false" onAction="#AllotNewRoomAction" prefHeight="48.0" prefWidth="381.0" text="Allot New Seat">
+      <font>
+        <Font name="Segoe UI Semilight" size="25.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button font="$x1" layoutX="513.0" layoutY="458.0" mnemonicParsing="false" onAction="#EmptyRoomAction" prefHeight="48.0" prefWidth="381.0" text="Empty Seats" />
+    <Button font="$x1" layoutX="107.0" layoutY="516.0" mnemonicParsing="false" onAction="#SwapRoomsAction" prefHeight="48.0" prefWidth="381.0" text="Swap Seats" />
+    <Button font="$x1" layoutX="513.0" layoutY="516.0" mnemonicParsing="false" onAction="#ShiftToEmptyAction" prefHeight="48.0" prefWidth="381.0" text="Shift to Empty Seat" />
+    <Button font="$x1" layoutX="107.0" layoutY="578.0" mnemonicParsing="false" onAction="#MakeAdjustmentAction" prefHeight="48.0" prefWidth="381.0" text="Make New Adjustment" />
+    <Text id="ADouble" fx:id="AAdjustment" fill="$x3" font="$x2" layoutX="342.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+    <Text id="ADouble" fx:id="BAdjustment" fill="$x3" font="$x2" layoutX="499.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+    <Text id="ADouble" fx:id="CAdjustment" fill="$x3" font="$x2" layoutX="663.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+    <Text id="ADouble" fx:id="TotalAdjustment" fill="$x3" font="$x2" layoutX="797.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+    <Text layoutX="759.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Hostel Management)">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Text>
+    <Button font="$x1" layoutX="513.0" layoutY="578.0" mnemonicParsing="false" onAction="#HelpButtonAction" prefHeight="48.0" prefWidth="381.0" text="Help" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.MessAccountantController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="154.0" opacity="0.5" stroke="DODGERBLUE" strokeType="INSIDE" width="1366.0" />
+    <Text layoutX="387.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Text>
+    <TextField fx:id="searchbox" blendMode="MULTIPLY" layoutX="462.0" layoutY="92.0" prefHeight="42.0" prefWidth="551.0" promptText="Search by Room Number" />
+    <TableView fx:id="SearchResultTable" editable="true" layoutY="154.0" prefHeight="526.0" prefWidth="1366.0" tableMenuButtonVisible="true">
+      <columns>
+        <TableColumn editable="false" minWidth="100.0" prefWidth="100.0" text="Room Number" fx:id="roomnoColumn" />
+        <TableColumn editable="false" minWidth="150.0" prefWidth="150.0" text="Name" fx:id="nameColumn" />
+        <TableColumn editable="false" minWidth="150.0" prefWidth="150.0" text="Current Due Amount" fx:id="dueColumn" />
+        <TableColumn minWidth="150.0" prefWidth="150.0" text="Subtract Amount" visible="false" fx:id="subtractAmountColumn" />
+        <TableColumn minWidth="150.0" prefWidth="150.0" text="Add Amount" fx:id="AddAmountColumn" />
+      </columns>
+    </TableView>
+    <Text layoutX="472.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banda Singh Bahadur Boys Hostel">
+      <font>
+        <Font name="Segoe UI Semilight" size="35.0" />
+      </font>
+    </Text>
+    <Text layoutX="822.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Mess Account Management)" />
+  </children>
+</AnchorPane>

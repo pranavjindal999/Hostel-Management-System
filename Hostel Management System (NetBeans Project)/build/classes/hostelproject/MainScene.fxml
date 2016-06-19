@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.MainSceneController">
+  <children>
+    <ImageView fitHeight="711.0" fitWidth="1372.7228191271745" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@media/Mainscene.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Text fill="#3385ff" layoutX="765.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banda Singh Bahadur Boys Hostel">
+      <font>
+        <Font name="Corbel" size="40.0" />
+      </font>
+    </Text>
+    <Text layoutX="761.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome...">
+      <font>
+        <Font name="Segoe UI Light" size="50.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text layoutX="760.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+      <font>
+        <Font name="Segoe UI Semilight" size="15.0" fx:id="x3" />
+      </font>
+    </Text>
+    <PasswordField fx:id="mainScenePassword" blendMode="MULTIPLY" disable="true" layoutX="844.0" layoutY="582.0" prefWidth="200.0" />
+    <AnchorPane id="AnchorPane" fx:id="accessGrantedLabel" layoutX="874.0" layoutY="604.0" minHeight="31.0" prefHeight="31.0" prefWidth="159.0" visible="false">
+      <children>
+        <Text id="accessGrantedLabel" fill="GREEN" layoutX="3.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access Granted !!">
+          <font>
+            <Font size="17.0" />
+          </font>
+        </Text>
+      </children>
+    </AnchorPane>
+    <ProgressIndicator fx:id="BusyIndicator" layoutX="1055.0" layoutY="582.0" opacity="0.0" prefHeight="22.0" prefWidth="20.0" progress="-0.51" />
+    <Text layoutX="761.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Database Server and Login">
+      <font>
+        <Font name="Segoe UI Light" size="20.0" />
+      </font>
+    </Text>
+    <Text layoutX="1080.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Designed &amp; Coded by Pranav Jindal">
+      <font>
+        <Font name="Segoe UI" size="14.0" />
+      </font>
+    </Text>
+    <RadioButton fx:id="localhostRadio" layoutX="761.0" layoutY="420.0" mnemonicParsing="false" text="This Computer" />
+    <RadioButton fx:id="networkhostRadio" layoutX="900.0" layoutY="420.0" mnemonicParsing="false" prefWidth="19.9998779296875" />
+    <TextField fx:id="IP1Label" blendMode="MULTIPLY" disable="true" layoutX="919.0" layoutY="417.0" prefWidth="31.0576171875" />
+    <TextField id="IP1Label" fx:id="IP2Label" blendMode="MULTIPLY" disable="true" layoutX="956.0" layoutY="417.0" prefWidth="31.0576171875" />
+    <TextField fx:id="IP3Label" blendMode="MULTIPLY" disable="true" layoutX="993.0" layoutY="417.0" prefWidth="31.0576171875" />
+    <TextField fx:id="IP4Label" blendMode="MULTIPLY" disable="true" layoutX="1030.0" layoutY="417.0" prefWidth="31.0576171875" />
+    <Text layoutX="952.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+    <Text layoutX="989.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+    <Text layoutX="1026.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+    <Button fx:id="makeConnectionButton" disable="true" layoutX="844.0" layoutY="461.0" mnemonicParsing="false" onAction="#makeConnectionAction" text="Make Connection" />
+    <ProgressIndicator fx:id="doneProgressButton" layoutX="885.0" layoutY="495.0" opacity="0.0" prefHeight="31.0" prefWidth="32.0" progress="1.0" />
+    <Text fx:id="unsuccessfulLabel" fill="RED" layoutX="855.0" layoutY="515.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unsuccessful!">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Text>
+    <Text font="$x3" layoutX="760.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" />
+    <ComboBox fx:id="UserComboBox" layoutX="843.0" layoutY="546.0" prefHeight="21.0" prefWidth="200.0" promptText="Select User">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>

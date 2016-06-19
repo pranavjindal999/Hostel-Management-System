@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.ActivityLogController">
+  <children>
+    <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+      <image>
+        <Image url="@media/grey.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ScrollPane blendMode="MULTIPLY" hbarPolicy="NEVER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <content>
+        <AnchorPane id="Content" fx:id="scrollAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="585.0" />
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

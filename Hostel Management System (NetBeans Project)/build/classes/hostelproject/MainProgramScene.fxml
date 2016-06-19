@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainTopAnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml" fx:controller="hostelproject.MainProgramSceneController">
+  <children>
+    <Group id="Group" layoutY="680.0">
+      <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0066ff" height="31.0" opacity="0.8" stroke="DODGERBLUE" strokeType="INSIDE" width="1366.0" />
+        <Text fontSmoothingType="LCD" layoutX="1080.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Designed &amp; Coded by Pranav Jindal">
+          <font>
+            <Font name="Segoe UI" size="14.0" />
+          </font>
+        </Text>
+        <Button blendMode="HARD_LIGHT" minHeight="18.6209716796875" mnemonicParsing="false" onAction="#logoutAction" prefHeight="23.0" prefWidth="80.0" text="Log Out" />
+        <Button blendMode="HARD_LIGHT" layoutX="88.0" mnemonicParsing="false" onAction="#changePasswordAction" prefHeight="23.0" prefWidth="124.0" text="Change Password" />
+        <Text fontSmoothingType="LCD" layoutX="357.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are currently logged in as:">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text fx:id="userLabel" fill="#cc0000" font="$x1" fontSmoothingType="LCD" layoutX="553.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel Accountant" />
+        <Button fx:id="activityLogButton" blendMode="HARD_LIGHT" layoutX="220.0" mnemonicParsing="false" onAction="#activityLogButtonAction" prefHeight="23.0" prefWidth="113.9208984375" text="Activity Log" />
+      </children>
+    </Group>
+    <AnchorPane id="AnchorPane" fx:id="mainAnchorPane">
+      <children>
+        <SplitPane fx:id="SplitPaneMain" dividerPositions="0.24926686217008798" focusTraversable="true" prefHeight="680.0" prefWidth="1366.0">
+          <items>
+            <AnchorPane id="left" fx:id="LeftSideofSplitPane" minHeight="0.0" minWidth="337.0" prefHeight="160.0" prefWidth="100.0">
+              <children>
+                <ImageView fitHeight="678.0" fitWidth="337.0" pickOnBounds="true">
+                  <image>
+                    <Image url="@media/side.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+                <TextField fx:id="searchbox" blendMode="MULTIPLY" layoutY="14.0" prefHeight="32.0" prefWidth="206.0" promptText="Search Name, Room No. or Anything" AnchorPane.leftAnchor="55.0" />
+                <Text font="$x1" layoutX="7.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+                <TableView fx:id="searchTable" prefHeight="616.0000013256073" prefWidth="337.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="62.0">
+                  <columns>
+                    <TableColumn maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Block" fx:id="blockcolum" />
+                    <TableColumn prefWidth="75.0" text="Room No." fx:id="roomnocolum" />
+                    <TableColumn minWidth="105.0" prefWidth="108.0" text="Name" fx:id="namecolumn" />
+                    <TableColumn maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="Roll No." fx:id="rollnocolumn" />
+                  </columns>
+                  <effect>
+                    <ColorAdjust brightness="-0.2137404580152671" contrast="0.15267175572519087" hue="-0.022900763358778775" saturation="-0.007633587786259555" />
+                  </effect>
+                </TableView>
+                <Separator layoutX="336.0" minWidth="1.220703125E-4" orientation="VERTICAL" prefHeight="75.11000061035156" prefWidth="1.0" />
+                <fx:include source="StudentDetail.fxml" layoutX="337.0" prefHeight="678.0" prefWidth="1020.0" />
+                <Text font="$x1" layoutX="292.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results" />
+                <Button fx:id="shrinkDetailsButton" cancelButton="true" layoutX="345.0" layoutY="10.0" mnemonicParsing="false" onAction="#shirnkDetailsAction" prefHeight="31.0" prefWidth="80.0" text="&lt;&lt; Shrink" />
+                <Text fx:id="resultnoLabel" font="$x1" layoutX="268.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+              </children>
+            </AnchorPane>
+            <AnchorPane fx:id="RightSideofSplitPane" minHeight="0.0" minWidth="0.0" prefHeight="678.0" prefWidth="1066.0">
+              <children>
+                <fx:include source="RightSideMain.fxml" layoutX="-3.0" prefHeight="678.0" prefWidth="1053.0" />
+              </children>
+            </AnchorPane>
+          </items>
+        </SplitPane>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
